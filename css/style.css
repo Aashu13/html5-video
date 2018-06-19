@@ -1,0 +1,85 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #ff006a;
+}
+
+.videoPlayer {
+  max-width: 500px;
+  margin: 50px auto;
+  height: auto;
+  position: relative;
+  top: 200px;
+}
+
+img {
+  max-width: 1000px;
+}
+
+video {
+  max-width: 500px;
+}
+
+.controlers {
+  max-width: 500px;
+  background: rgba(0, 0, 0, 0.9);
+  position: relative;
+  bottom: 30px;
+  vertical-align: middle;
+  color: #ff006a;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 10px;
+}
+
+.progress {
+  flex: 10;
+  position: relative;
+  display: flex;
+  height: 5px;
+  transition: height 0.3s;
+  background: #ffff80;
+  cursor: ew-resize;
+}
+
+.progressfiled {
+  width: 0%;
+  height: 5px;
+  background-color: #800080;
+  flex: 0;
+  flex-basis: 0%;
+}
+
+.playBtn,
+.player_button {
+  border: none;
+  width: 10%;
+  height: 20px;
+  background: none;
+  cursor: pointer;
+  color: #fff;
+  outline: none;
+}
+
+.player_button {
+  position: relative;
+  left: 150px;
+}
+
+input[type="range"] {
+  -webkit-appearance: none !important;
+  background: #a9f1df;
+  width: 55px;
+  height: 5px;
+  border-radius: 10px;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  background: red;
+  width: 12px;
+  height: 12px;
+  border-radius: 10px;
+}
